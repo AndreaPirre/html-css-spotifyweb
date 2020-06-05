@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.container_main {
+    height: calc(100vh - 90px);
+    width: 100vw;
+}
+
+.box_player {
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+
+}
