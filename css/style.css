@@ -12,11 +12,44 @@ body {
 
 .container_main {
     height: calc(100vh - 90px);
-    width: 100vw;
+    /* overflow: hidden; */
 }
 
-.box_player {
+.container_main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container_main {
+    height: calc(100vh - 90px);
+    width: 100%;
+}
+
+.box_upgrade {
+    width:  calc(100vw - 230px);
+    height: 100px;
+    background-color: #080b12;
+    float: right;
+}
+
+.content_main {
+    width:  calc(100% - 230px);
+    height: 100%;
+    background-color: #141922;
+    float: right;
+}
+
+.nav_playlist {
+    height: 100%;
+    width: 230px;
+    background-color: #000000;
+    float: left;
+}
+
+.footer_player {
     width: 100%;
     height: 90px;
     background-color: #282828;
+    z-index: 5;
 }
