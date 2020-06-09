@@ -68,13 +68,14 @@ body {
     width: 230px;
     background-color: #000000;
     float: left;
+    overflow: hidden;
 }
 
 .account {
     display: flex;
     width: 230px;
-    height:80px;;
     background-color: red;
+    align-items: flex-end;
 }
 
 /* .nav_playlist li {
@@ -111,6 +112,7 @@ body {
     padding-left: 15px;
     margin-top: 5px;
     position: absolute;
+    overflow: hidden;
 }
 
 .playlist {
@@ -128,6 +130,7 @@ body {
     display: inline-block;
     position: absolute;
     margin-top: 20px;
+    overflow: hidden;
 
 }
 .crea_playlist {
@@ -186,31 +189,35 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 .container_album {
     background-color:;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.layover {
+    height: 180px;
+    margin-right: 15px;
+    background-color: #000;
+    opacity: 100%;
+    display: flex;
+
 }
 
 .img_album {
     height: 180px;
     margin-right: 15px;
     display: flex;
+
 }
 
 .description {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 20px;
     margin-top: 10px;
 
@@ -282,4 +289,33 @@ body {
     height: 90px;
     background-color: #282828;
     z-index: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player_left {
+    background-color: ;
+    height: 90px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#img_player {
+    width: 50px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.brano {
+    margin-left: 65px;
+    margin-top: 30px;
+    color:#fff;
+    font-weight: 700;
+}
+
+.brano p {
+    color: grey;
+    font-size: 11px;
+
+
 }
