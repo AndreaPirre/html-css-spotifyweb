@@ -204,6 +204,7 @@ body {
     background-color: #000;
     opacity: 100%;
     display: flex;
+    position: absolute;
 
 }
 
@@ -211,6 +212,7 @@ body {
     height: 180px;
     margin-right: 15px;
     display: flex;
+    position: relative;
 
 }
 
@@ -224,18 +226,21 @@ body {
 }
 
 .title_img {
+    margin-top: 10px;
     width: 180px;
     background-color: ;
-    margin-right: 15px;
-    height: 20px;
+    /* margin-right: 15px; */
+    /* height: 20px; */
     text-align: center;
     color: #fff;
     font-weight: 600;
 }
 .subtitle {
+    width: 180px;
     font-size: 12px;
     margin-top: 10px;
     color: lightgrey;
+    text-align: center;
 }
 
 .secondo_blocco {
@@ -297,7 +302,7 @@ body {
     background-color: ;
     height: 90px;
     width: 200px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #img_player {
@@ -338,7 +343,7 @@ body {
     width: 600px;
     background-color: ;
     display: flex;
-    margin-left: 160px;
+    margin-left: 200px;
     justify-content: center;
     color: #fff;
 
@@ -387,4 +392,42 @@ body {
     margin-left: 420px;;
     margin-top: -8px;
     font-size: 12px;
+}
+
+.player_right {
+    height: 90px;
+    width: 260px;
+    background-color: ;
+    display: flex;
+    margin-left:250px;
+
+    margin-right: 20px;
+
+}
+
+.video, .barre, .volume {
+    align-self:  center;
+    margin-right: 15px;
+    font-size: 15px;
+    color: grey;
+}
+
+.cursore_volume {
+    width: 100px;
+    height: 4px;
+    margin-left: 90px;
+    background-color: grey;
+    align-self: center;
+    border-radius: 20px;
+    position:absolute;
+}
+
+.volume_barra {
+    width: 30px;
+    height: 4px;
+
+    background-color: lightgrey;
+    align-self: center;
+    border-radius: 20px;
+    position:absolute;
 }
