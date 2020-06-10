@@ -3,26 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>Spotify-Web</title>
+        <link rel="icon" href="img/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
-        <header>
-
-        </header>
 
         <main class="container_main">
 
             <div class="content_main">
-
+                <!-- box con upgrade -->
                 <div class="box_upgrade">
 
                         <a class="btn_upgrade" href="#">EFFETTUA L'UPGRADE</a>
 
                 </div>
-
+                <!-- menu in box main -->
                 <ul class="menu_main">
                     <li> <a href="#">IN EVIDENZA</a> <div class="barretta"></div> </li>
                     <li> <a href="#">PODCAST</a></li>
@@ -31,9 +29,9 @@
                     <li> <a href="#">NUOVE USCITE</a></li>
                     <li> <a href="#">SCOPRI</a></li>
                 </ul>
-
+                <!-- inizio contenuto main -->
                 <h1>Recently played</h1>
-
+                <!-- primo blocco con copertine album -->
                 <div class="container_album">
 
 
@@ -139,9 +137,9 @@
 
                     </div>
                 </div>
+                <!-- fine primo blocco -->
 
-
-
+                <!-- inizio secondo blocco  -->
                 <div class="secondo_blocco">
                     <h1>Creato per John Doe</h1>
                     <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggrimenti</p>
@@ -176,7 +174,7 @@
 
 
                 </div>
-
+                <!-- inizio sezione musica consigliata -->
                 <div class="terzo_blocco">
 
                     <h1>Artisti pi&ugrave; popolari</h1>
@@ -196,16 +194,12 @@
                         </div>
                     </div>
 
-
                 </div>
-
-
-
 
             </div>
 
 
-
+            <!-- inizio parte nava laterale -->
             <nav class="nav_playlist">
 
                 <img id="img_logo" src="img/logo.svg" alt="qui logo spotifyweb">
@@ -232,7 +226,7 @@
                 <div class="playlist">
                     <h5>PLAYLIST</h5>
                     <div class="">
-                    <div class="square"></div>  <a href="#"> <div class="crea_playlist">Crea Playlist</div></a>
+                    <div class="square"><i class="segno_piu fas fa-plus"></i></div>  <a href="#"> <div class="crea_playlist">Crea Playlist</div></a>
                     </div>
                     <ul class="lista">
                         <li> <a href="#">Nome Playlist</a> </li>
@@ -244,28 +238,29 @@
                         <li> <a href="#">Nome Playlist</a> </li>
                     </ul>
 
-                    <div class="box_account">
 
-                        <div class="installa_app">
-                           <img class="img_account" src="img/download.svg" alt="img download"> <p>Installa app</p>
-                           <div class="account">
-                               <img class="img_account profile" src="img/profile.svg" alt="img profile">  <p>Jhon Doe</p>
-                           </div>
+                </div>
+                <!-- inizio blocco installa app -->
+                <div class="box_account">
+
+                    <div class="installa_app">
+                       <img class="img_account" src="img/download.svg" alt="img download"> <p>Installa app</p>
+                       <div class="account">
+                           <img class="img_account profile" src="img/profile.svg" alt="img profile">  <p>Jhon Doe</p>
                        </div>
-
-
-                    </div>
+                   </div>
 
 
                 </div>
-
             </nav>
 
-        </main>
 
+
+        </main>
+        <!-- inizio footer -->
         <footer>
             <div class="footer_player">
-
+                <!-- parte sinistra -->
                 <div class="player_left">
                     <img id="img_player" src="img/sinister.jpeg" alt="">
                     <div class="brano">Sinister<p>Brano Nome</p></div>
@@ -280,7 +275,7 @@
                 </div>
 
 
-
+                <!-- parte centrale con player -->
                 <div class="player_center">
 
                     <i class="comandi fas fa-random"></i>
@@ -292,16 +287,16 @@
                         <div class="cursore">
 
                             <span class="time">0:25</span>
-                            <!-- <span class="time_right">4:35</span> -->
+
                             <div class="cursore_verde">
                                 <span class="dot"></span>
                             </div>
-
+                            <span class="time_right">4:35</span>
 
                         </div>
 
                 </div>
-
+                <!-- inizio parte destra -->
                 <div class="player_right">
 
                     <div class="icone_right">
