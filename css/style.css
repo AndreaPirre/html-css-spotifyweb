@@ -72,11 +72,60 @@ body {
     overflow: hidden;
 }
 
-.account {
-    display: flex;
+.box_account {
+    display:flex;
     width: 230px;
-    background-color: red;
+    height: 148px;
+    background-color:;
     align-items: flex-end;
+    position: static;
+
+}
+
+/* div installa app e icona */
+.installa_app {
+    width: 230px;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: ;
+    /* border-bottom: 1px solid grey; */
+    margin-left: 0px;
+    margin-right: 20px;
+    align-self: flex-end;
+
+}
+/* installa app */
+.installa_app p {
+    margin-left: 30px;
+    margin-top: 3px;
+    padding-bottom:  10px;
+    font-size: 12px;
+    color: lightgrey;
+}
+/* icona download */
+.img_account {
+    width: 20px;;
+    position: absolute;
+}
+
+/* icona del profilo */
+.profile {
+    background-color: grey;
+    border-radius: 100px;
+}
+
+/* blocco del profilo jhon */
+.account {
+    margin-left: 5px;
+    font-weight: 800;
+    margin-right: 10px;
+    position: relative;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+/* jhon doe */
+.account p {
+    margin-top: 5px;
 }
 
 /* .nav_playlist li {
@@ -143,7 +192,7 @@ body {
     display: inline-block;
     position: absolute;
     margin-top: 20px;
-    overflow: hidden;
+
 
 }
 .crea_playlist {
@@ -363,6 +412,7 @@ body {
 
 .player_left {
     background-color:;
+    padding-left: 5px;
 }
 
 .icone_left {
@@ -384,7 +434,7 @@ body {
 
 #copertina_brano {
     width: 80px;
-    padding-left: 10px;
+
     padding-top: 10px;
     position: absolute;
 }
@@ -435,6 +485,29 @@ body {
     align-self: center;
     border-radius: 20px;
     position:absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cursore_verde:hover {
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+.cursore_verde:hover .dot{
+    display: block;
+}
+
+.dot {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    align-self: center;
+    position: absolute;
+    border-radius: 100px;
+    margin-left: 100px;
+    display: none;
+
 }
 
 .time {
@@ -443,9 +516,6 @@ body {
     font-size: 12px;
     align-self: center;
 }
-
-
-
 
 /* .time_right {
     position: absolute;
@@ -495,10 +565,17 @@ body {
     color: grey;
 }
 
+.video:hover, .barre:hover, .volume:hover, .cuore:hover, .folder:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 .icone_right {
     display: flex;
     justify-content:flex-end;
 }
+
+
 
 .cursore_volume {
     width: 30%;
@@ -516,6 +593,17 @@ body {
     align-self: center;
     border-radius: 20px;
     position:absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.volume_barra:hover {
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+.volume_barra:hover .dot{
+    display: block;
 }
 
 
