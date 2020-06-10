@@ -35,6 +35,7 @@ body {
     justify-content: flex-end;
     position: fixed;
     opacity: 60%;
+    z-index: 20;
 }
 
 .btn_upgrade {
@@ -157,6 +158,7 @@ body {
     display: flex;
     margin-top: 120px;
     justify-content: center;
+    flex-wrap: wrap;
     color: #d2d2d2;
 }
 
@@ -197,16 +199,50 @@ body {
     margin-top: 20px;
     margin-left: 20px;
 }
-
-.layover {
-    height: 180px;
-    margin-right: 15px;
-    background-color: #000;
-    opacity: 100%;
-    display: flex;
-    position: absolute;
-
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+.wrapper {
+  position: relative;
+  width: 100%;
 }
+
+.img_album {
+  display: block;
+  width: 90%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 90%;;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\ */
+
 
 .img_album {
     height: 180px;
@@ -248,7 +284,7 @@ body {
     height: 100px;
     /* background-color: red; */
 
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .secondo_blocco, .terzo_blocco p {
@@ -285,67 +321,44 @@ body {
     border-radius: 100px;
 }
 
-
-
-
-
 .footer_player {
     width: 100%;
     height: 90px;
     background-color: #282828;
     z-index: 5;
     display: flex;
-    justify-content: flex-start;
+    justify-content:space-between;
 }
 
-.player_left {
-    background-color: ;
-    height: 90px;
-    width: 200px;
-    margin-left: 40px;
-}
-
-#img_player {
+.player_left,.player_center, .player_right{
+    background-color: red;
     width: 50px;
-    margin-top: 20px;
+    /* height: 90px; */
+    display: flex;
+    justify-content: center;
+}
+
+#copertina_brano {
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
     position: absolute;
 }
 
-.brano {
-    margin-left: 65px;
-    margin-top: 30px;
+.titolo_album {
+    position: relative;
+    align-self: center;
+
+    margin-left: 250px;
     color:#fff;
     font-weight: 700;
 }
 
-.brano p {
-    color: grey;
-    font-size: 11px;
-}
-
-.icone_left {
-    height: 90px;
-    width: 50px;
-    background-color:;
-    display: flex;
-}
-
 .cuore, .folder{
     align-self:  center;
-    margin-right: 15px;
+    margin-left: 20px;
     font-size: 18px;
     color: grey;
-
-}
-
-.player_center {
-    height: 90px;
-    width: 600px;
-    background-color: ;
-    display: flex;
-    margin-left: 200px;
-    justify-content: center;
-    color: #fff;
 
 }
 
@@ -358,76 +371,4 @@ body {
 .play {
     font-size: 35px;
     padding-top: 10px;
-}
-
-.cursore {
-    width: 400px;
-    height: 4px;
-    margin-top: 40px;
-    background-color: grey;
-    align-self: center;
-    position: absolute;
-    border-radius: 20px;
-}
-
-.cursore_verde {
-    width: 100px;
-    height: 4px;
-    margin-top: 0px;
-    background-color: lightgrey;
-    align-self: center;
-    border-radius: 20px;
-    position:absolute;
-}
-
-.time {
-    position: absolute;
-    margin-left: -45px;
-    margin-top: -8px;
-    font-size: 12px;
-}
-
-.time_right {
-    position: absolute;
-    margin-left: 420px;;
-    margin-top: -8px;
-    font-size: 12px;
-}
-
-.player_right {
-    height: 90px;
-    width: 260px;
-    background-color: ;
-    display: flex;
-    margin-left:250px;
-
-    margin-right: 20px;
-
-}
-
-.video, .barre, .volume {
-    align-self:  center;
-    margin-right: 15px;
-    font-size: 15px;
-    color: grey;
-}
-
-.cursore_volume {
-    width: 100px;
-    height: 4px;
-    margin-left: 90px;
-    background-color: grey;
-    align-self: center;
-    border-radius: 20px;
-    position:absolute;
-}
-
-.volume_barra {
-    width: 30px;
-    height: 4px;
-
-    background-color: lightgrey;
-    align-self: center;
-    border-radius: 20px;
-    position:absolute;
 }
